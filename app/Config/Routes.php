@@ -8,11 +8,13 @@ $routes->get('/', 'Home::index');
 
 $routes->get('/beranda', 'Home::index');
 
-$routes->get('/mahasiswa', 'Home::mahasiswa');
+#$routes->get('/mahasiswa', 'Home::mahasiswa');
 
-$routes->get('/dosen', 'Home::dosen');
+$routes->get('dosen', 'dosen::index');
 
-$routes->get('/matakuliah', 'Home::matakuliah');
+$routes->get('matakuliah', 'MataKuliah::index');
 
 $routes->get('/tentang', 'Home::tentang');
+
+$routes->get('mahasiswa', 'Mahasiswa::index');
 
